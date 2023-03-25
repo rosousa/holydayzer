@@ -3,8 +3,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class Holidays {
-    private List<String> dates = new ArrayList<>(Arrays.asList(
+public class Holidays implements IHolidays {
+    private final List<String> dates = new ArrayList<>(Arrays.asList(
             "01/01/2023",
             "21/02/2023",
             "17/04/2023",
@@ -18,7 +18,7 @@ public class Holidays {
             "25/12/2023"
     ));
 
-    private List<String> titles = new ArrayList<>(Arrays.asList(
+    private final List<String> titles = new ArrayList<>(Arrays.asList(
             "Confraternização mundial",
             "Carnaval",
             "Páscoa",
